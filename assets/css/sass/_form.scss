@@ -1,0 +1,338 @@
+.fourth-session {
+
+
+
+
+  ul {
+    text-align: center;
+    color: #ffffff;
+  }
+  li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 35px;
+    position: relative;
+    input:checked {
+      border: 2px solid #c2d7f1;
+      position: relative;
+      &:before {
+        content:"";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background: #22408b;
+        margin: 3px;
+      }
+      ~label {
+        border-color: rgba(255,255,255,.5);
+        background: rgba(161,208,255, .8);
+      }
+    }
+    h3 {
+      font-size: 23px;
+    }
+    p {
+      @include dosis-light;
+    }
+    input {
+      display: block;
+      margin: 55px auto -55px;
+      position: relative;
+      z-index: 4;
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      background: #ffffff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      border: 2px solid #848ab2;
+    }
+    img {
+      margin: 30px 0;
+    }
+  }
+  .wrap-box {
+    border: 1px solid transparent;
+    width: 235px;
+    height: 300px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 0;
+    margin: 0 auto 20px;
+    display: block;
+    cursor: pointer;
+    &:hover {
+      border-color: rgba(255,255,255,.5);
+      transition: all .4s;
+    }
+  }
+  form {
+    pointer-events: auto;
+  }
+  .form-contact {
+    .bt-enviar {
+      font-size: 17px;
+      color: #ffffff;
+      border-bottom: 0;
+      float: right;
+      width: auto;
+      text-align: right;
+      cursor: pointer;
+      @include dosis-light;
+    }
+    li {
+      position: relative;
+    }
+    label {
+      display: block;
+      color: #ffffff;
+      font-size: 14px;
+      position: absolute;
+    }
+    input, select {
+      background: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      border: 0;
+      border-bottom: 1px solid rgba(255,255,255,.5);
+      font-size: 16px;
+      color: rgba(255, 255, 255, .7);
+      padding-bottom: 4px;
+      margin-top: 20px;
+      outline: 0;
+      width: 100%;
+      @include dosis-light;
+    }
+    select {
+      background: url("../img/bg-select.png") 100% 5px no-repeat;
+      option {
+        color: #000000;
+      }
+    }
+
+    textarea {
+      @include dosis-light;
+      background: rgba(255,255,255,.5);
+      color: #00174e;
+      font-size: 16px;
+      font-weight: bold;
+      outline: 0;
+      width: 100%;
+      border: 0;
+      padding: 10px;
+      max-width: 100%;
+      box-sizing: border-box;
+      resize: none;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #00174e;
+        font-size: 16px;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #00174e;
+        font-size: 16px;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #00174e;
+        font-size: 16px;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #00174e;
+        font-size: 16px;
+      }
+    }
+  }
+  .txt-form {
+    float: left;
+    div {
+      height: auto;
+    }
+    h3 {
+      @include dosis-light;
+      font-size: 40px;
+      margin-top: 15px;
+      color: #ffffff;
+    }
+  }
+  .form-row {
+    background: rgba(0,20,68, 0.8);
+    max-width: 650px;
+    position: relative;
+    z-index: 8;
+    padding: 35px 20px;
+    float: right;
+    position: relative;
+    &:before {
+      content:"";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 30px solid rgba(0,20,68, 0.8);
+      bottom: -30px
+    }
+    .wrap-input, .wrap-select {
+      margin: 9px 35px;
+
+      .attention  {
+        border-bottom: 1px solid #fe0154;
+      }
+      textarea.attention {
+        border-bottom: 1px solid #fe0154;
+      }
+    }
+  }
+  .form-row.positive-feedback{
+    &:before {
+      content:"";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 0px solid transparent;
+      border-top: 30px solid rgba(0,20,68, 0.8);
+      bottom: -30px;
+      right: 22px
+    }
+    .positive-feedback {
+      width: 650px;
+      margin: 9px 35px;
+      
+      h5 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 45px 0 10px;
+        text-align: center;
+      }
+      p {
+        font-size: 23px;
+        clear: both;
+        color: #fff;
+        font-weight: 200;
+        text-align: center;
+      }
+      .bt-voltar {
+        float: right;
+        font-size: 17px;
+        color: #ffffff;
+        float: left;
+        text-decoration: underline;
+        @include dosis-light;
+        &:before {
+          content: "<";
+          display: inline-block;
+          margin-right: 10px;
+      }
+      }    
+    }
+  }
+  .wrap-slide {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .footer-txt {
+    clear: both;
+    color: #ffffff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 70px 0;
+    .col {
+      float: left;
+      h5 {
+        font-size: 21px;
+        font-weight: bold;
+      }
+      a {
+        font-size: 21px;
+        font-weight: lighter;
+        color: #ffffff;
+        text-decoration: underline;
+        @include dosis-light;
+      }
+    }
+    .col:nth-child(2) {
+      width: calc(100% - 320px);
+      float: right;
+      p {
+        @include dosis-light;
+        font-size: 20px;
+      }
+    }
+  }
+
+}
+
+.footer-txt{
+   a{
+    pointer-events: auto;
+   }
+}
+.redes-sociais{  
+   overflow: hidden;
+  li{
+   margin: 0 !important;
+   float: left;
+   border: 0 !important;
+   width: auto !important;
+   height: auto !important;
+   padding: 0 !important;
+  a{
+    pointer-events: auto;
+   }
+   
+
+  }
+   li + li{
+      margin-left: 20px !important;
+   }
+}
+
+  .footer-contact {
+    @include dosis-light;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+
+
+    [class*="icon"] {
+      display: inline-block;
+      width: 28px;
+      height: 37px;
+      margin: 0 10px -7px 0;
+    }
+    .icon-phone {
+      background: url("../img/icon-phone.png") no-repeat center;
+    }
+    .icon-email {
+      background: url("../img/icon-email.png") no-repeat center;
+    }
+    p {
+      display: inline-block;
+      &:nth-child(2) {
+        margin-right: 60px;
+        a{           
+          font-size: 19px;
+          clear: both;
+          color: #fff;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+  }

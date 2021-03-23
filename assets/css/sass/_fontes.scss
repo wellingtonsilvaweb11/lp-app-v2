@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,400,700');
+
+$dosis: 'Dosis', sans-serif;
+
+@mixin dosis {
+  font-family: $dosis;
+  font-style: normal;
+  letter-spacing: 1px; 
+}
+
+@mixin dosis-bold {
+  font-family: $dosis;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin dosis-light {
+  font-family: $dosis;
+  font-style: normal;
+  font-weight: 200;
+}
